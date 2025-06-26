@@ -8,6 +8,7 @@
   --vinho-liturgico: #6a1b1b;
   --preto-suave: #222222;
     --dourado-suave-mais: #b89c40a9;
+      --dourado-suave-escuro: #8e7422d5;
 }
 
 /* Reset básico */
@@ -16,6 +17,9 @@
   padding: 0;
   box-sizing: border-box;
 
+  &:focus{
+    outline: none;
+  }
 }
 
 body {
@@ -26,13 +30,31 @@ body {
   flex-direction: column;
   align-items: center;
 height: 100vh;
-  box-shadow: inset 2px 2px 200px var(--dourado-suave-mais);
+  box-shadow: inset 20px 20px 200px black;
   overflow-x: hidden;
+ 
 
-
-
+  background-image: url(img/imgFundo/fundoCe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
+@media screen and (min-width: 768px) {
+  body {
+  background-image: url(img/imgFundo/fundoDesk.png);
+  }
+}
+
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+ 
+}
+
 
 .header {
 margin-top: 20px;
@@ -41,15 +63,17 @@ margin-top: 20px;
   height: 150px;
   display: flex;
   justify-content: center;
- 
+ background: transparent;
   position: sticky;
   top: 0;
   z-index: 1000;
 
-  background-image: url(logotipo.png);
+  background-image: url(./img/logotipo.png);
   background-size: 250px 250px;
+
   background-repeat: no-repeat;
   background-position: center;
+
 }
 
 
@@ -79,9 +103,12 @@ margin-top: 20px;
   cursor: pointer;
 }
 
-.card:hover {
+.card:hover, :focus {
+    background-color: var(--dourado-suave-escuro);
   transform: translateY(-5px);
+
 }
+
 
 .card img {
   width: 40px;
