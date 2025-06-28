@@ -1,5 +1,26 @@
+body{
+  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
+              url('../img/imgFundo/misteriosCel.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+@media screen and (min-width: 768px) {
+  body {
+  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
+              url('../img/imgFundo/misteriosDesk.png');
+  }
+}
+
 .grid {
   display: grid;
 grid-template-columns: repeat(2, 1fr);
 
+}
+
+.card img {
+  width: 40px;
+height: auto;
+  margin-bottom: 0.5rem;
 }
