@@ -1,26 +1,35 @@
-body{
-  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-              url('../img/imgFundo/misteriosCel.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@charset "UTF-8";
+:root {
+  --azul-mariano: #1f3a93;
+  --dourado-suave: #e8bf39d5;
+  --branco-puro: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --vinho-liturgico: #6a1b1b;
+  --preto-suave: #222222;
+  --dourado-suave-mais: #b89c40a9;
+  --dourado-suave-escuro: #8e7422d5;
+}
 
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
+    url("../img/imgFundo/misteriosCel.png");
 }
 @media screen and (min-width: 768px) {
   body {
-  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-              url('../img/imgFundo/misteriosDesk.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
+      url("../img/imgFundo/misteriosDesk.png");
   }
 }
 
+
+
 .grid {
   display: grid;
-grid-template-columns: repeat(2, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);
 }
-
 .card img {
   width: 40px;
-height: auto;
+  height: auto;
   margin-bottom: 0.5rem;
 }
+
