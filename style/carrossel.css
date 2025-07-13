@@ -15,13 +15,23 @@
     overflow: hidden; /* Oculta as imagens que não estão visíveis */
     position: relative; /* Necessário para posicionar as imagens absolutamente dentro */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.279);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.179);
 }
 @media screen and (min-width: 768px) {
     .carrossel-placeholder {
-          height: 350px;
-        max-width: 700px; /* Limita a largura máxima do carrossel em telas maiores */
+          height: 550px;
+        max-width: 750px; /* Limita a largura máxima do carrossel em telas maiores */
     }
+}
+
+@media screen and (min-width: 992px) {
+    .carrossel-placeholder {
+          height: 500px;
+        max-width: 900px; /* Limita a largura máxima do carrossel em telas maiores */
+        flex-direction: row;
+    }
+
+
 }
 
 .carousel {
@@ -39,7 +49,7 @@
 .carousel-slides img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Mantém a proporção da imagem */
     position: absolute;
     top: 0;
     left: 0;

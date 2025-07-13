@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Seleciona todas as imagens dentro do carrossel atual
         const carouselImages = placeholder.querySelectorAll('.carousel-slides img');
         let currentIndex = 0; // Índice da imagem atualmente visível
-        const intervalTime = 3000; // Tempo em milissegundos para a troca (3 segundos)
+        const intervalTime = 5000; // Tempo em milissegundos para a troca (3 segundos)
 
         // Se houver imagens, exibe a primeira imagem ao carregar a página
         if (carouselImages.length > 0) {

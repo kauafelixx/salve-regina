@@ -9,17 +9,20 @@
   --preto-suave: #222222;
   --dourado-suave-mais: #b89c40a9;
   --dourado-suave-escuro: #8e7422d5;
+
+  --font-h1:"Petit Formal Script", cursive;
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-    url("./img/imgFundo/fundoCe.png");
-}
-@media screen and (min-width: 768px) {
-  body {
-    background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-      url("./img/imgFundo/fundoDesk.png");
-  }
+  
+  background-image: 
+    linear-gradient(rgba(255, 214, 163, 0.816), rgba(0, 0, 0, 0.781)), 
+    url('img/imgFundo/img-fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 
 .main {
@@ -32,6 +35,7 @@ body {
   width: 40px;
   height: 40px;
   margin-bottom: 0.5rem;
+  filter: drop-shadow(1px 1px 5px #3e1010);
 }
 .grid {
   display: grid;
@@ -39,4 +43,41 @@ body {
   gap: 1.5rem;
   margin-top: 2rem;
   padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f2e8;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.logo-container h1 {
+ font-family:  var(--font-h1);
+  font-weight: 900;
+  
+  color: var(--vinho-liturgico);
+  text-shadow: 1px 1px 3px rgb(62, 24, 27);
+  font-size: 4em;
+  line-height: 0.9;
+}
+
+.regina {
+  padding-bottom: 30px;
+}
+.text{
+  padding-left: 10px;
+}
+
+.logo-image {
+  padding-top: 10px;
+  height: 180px;
+  margin-left: -70px;
+  padding-bottom: 75px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%), saturate(150%);
+  transform: scale(1.2);
 }

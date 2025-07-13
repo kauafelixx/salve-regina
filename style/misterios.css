@@ -10,24 +10,30 @@
   --preto-suave: #222222;
   --dourado-suave-mais: #b89c40a9;
   --dourado-suave-escuro: #8e7422d5;
+
+  
+  --font-h1:"Petit Formal Script", cursive;
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-    url("../img/imgFundo/misteriosCel.png");
+  background:   linear-gradient(rgba(255, 214, 163, 0.816), rgba(0, 0, 0, 0.729)),
+    url("../img/imgFundo/img-fundo.jpg");
+   
 }
-@media screen and (min-width: 768px) {
-  body {
-    background: linear-gradient(rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.729)),
-      url("../img/imgFundo/misteriosDesk.png");
-  }
-}
+
 
 
 
 .grid {
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+.card{
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 170px;
 }
 .card img {
   width: 40px;
