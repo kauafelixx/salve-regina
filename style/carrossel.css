@@ -1,63 +1,86 @@
+.carrossel-placeholder {
 
-    
-  .carrossel-placeholder {
-    margin: 15px auto;
-    height: 300px;
-    background: #e0e0e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    color: #555;
 
-    /* Estilos ESSENCIAIS para o carrossel */
-    padding: 0;
-    overflow: hidden; /* Oculta as imagens que não estão visíveis */
-    position: relative; /* Necessário para posicionar as imagens absolutamente dentro */
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.179);
+  margin: 15px auto;
+  height: 300px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius:12px ;
+
+ 
 }
+
 @media screen and (min-width: 768px) {
-    .carrossel-placeholder {
-          height: 550px;
-        max-width: 750px; /* Limita a largura máxima do carrossel em telas maiores */
-    }
+  .carrossel-placeholder {
+    height: 550px;
+    width: 700px;
+  }
 }
 
-@media screen and (min-width: 992px) {
-    .carrossel-placeholder {
-          height: 500px;
-        max-width: 900px; /* Limita a largura máxima do carrossel em telas maiores */
-        flex-direction: row;
-    }
-
-
+@media screen and (min-width: 850px) {
+  .carrossel-placeholder {
+    height: 550px;
+    max-width: 900px;
+   
+  }
 }
 
 .carousel {
-    width: 100%;
-    height: 100%;
-    position: relative; /* Para posicionamento das imagens */
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  
 }
 
 .carousel-slides {
-    width: 100%;
-    height: 100%;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  position: relative;
+
 }
 
-.carousel-slides img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Mantém a proporção da imagem */
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; /* Esconde as imagens por padrão */
-    transition: opacity 0.8s ease-in-out;
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+
 }
 
-.carousel-slides img.active {
-    opacity: 1; /* Mostra a imagem ativa */
-    z-index: 1;
+.img-wrapper.active {
+  opacity: 1;
+  z-index: 1;
+  
+}
+
+/* Sombra interna com efeito vinheta */
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+box-shadow: inset 10px 10px 20px #ffffffad;
+  pointer-events: none;
+  z-index: 2;
+  
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }

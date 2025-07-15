@@ -57,10 +57,16 @@ background-image: linear-gradient(
 
 }
 
+
+
 .card:hover,
 :focus {
-  background-color: var(--dourado-suave-escuro);
-  transform: translateY(-5px);
+
+  transform: translateY(-5px) scale(1.1);
+
+    box-shadow:     0 5px 10px rgba(0, 0, 0, 0.2),
+    0 10px 20px rgba(0, 0, 0, 0.15),
+    0 15px 30px rgba(0, 0, 0, 0.1);;
 }
 
 .card p {

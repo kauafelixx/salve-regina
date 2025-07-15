@@ -34,25 +34,45 @@
   body{
     text-align: justify;
     font-family: var(--font-family-parastoo);
-     background-color: var(--cinza-claro);
+ background-image: url(../img/imageSemTag/fundoMisterios.jpg);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
       color: #000000;
       margin: 0;
-      padding: 20px;
+        font-weight: bolder;
 font-size: .95em;
 line-height: 25px;
 
+
+@media screen and (min-width: 768px) {
+  p, li  {
+    font-size: 1.2em;
+    line-height: 22px;
+  }
+  
+}
+
     }
     h1, h2, h3 {
+  
       color: var(--vinho-liturgico);
-      font-weight: bolder;
+
+    }
+
+    .pai{
+      padding: 20px;
     }
     .misterio {
       margin-top: 30px;
-      padding: 20px;
-      background: #fff;
-      border-left: 6px solid var(--vinho-liturgico);
-      border-top: 1px solid  var(--vinho-liturgico-fraco);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px 10px 10px 10px;
+      background: #ffffff97;
+      border-left: 10px solid var(--vinho-liturgico);
+      border-radius: 15px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.404);
+ 
+
+   
     }
     
 
