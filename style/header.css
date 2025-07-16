@@ -1,7 +1,7 @@
 /* styles.css */
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
 :root {
   --azul-mariano: #1f3a93;
   --dourado-suave: #e8bf39d5;
@@ -12,18 +12,17 @@
   --dourado-suave-mais: #b89c40a9;
   --dourado-suave-escuro: #8e7422d5;
 
-  --font-h1:"Petit Formal Script", cursive;
-}body{
-    overflow-x: hidden;
+  --font-h1: "Petit Formal Script", cursive;
 }
-
-
+body {
+  overflow-x: hidden;
+}
 
 .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background-color: #f7f2e8;
   width: 100vw;
   display: flex;
@@ -31,9 +30,9 @@ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   gap: 10px;
 }
 .logo-container h1 {
- font-family:  var(--font-h1);
+  font-family: var(--font-h1);
   font-weight: 900;
-  
+
   color: var(--vinho-liturgico);
   text-shadow: 1px 1px 3px rgb(62, 24, 27);
   font-size: 4em;
@@ -43,7 +42,7 @@ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 .regina {
   padding-bottom: 30px;
 }
-.text{
+.text {
   padding-left: 10px;
 }
 
@@ -52,6 +51,7 @@ box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   height: 180px;
   margin-left: -70px;
   padding-bottom: 75px;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%), saturate(150%);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%),
+    saturate(150%);
   transform: scale(1.2);
 }
