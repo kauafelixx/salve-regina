@@ -82,7 +82,7 @@ body {
   }
 }
 
-.oracaoInicialnormal {
+.oracaoInicialnormal, .oracaoFinal {
   line-height: 22px;
   font-size: 1.05em;
   text-align: justify;
@@ -171,3 +171,5 @@ border-left: var(--vinho-liturgico) solid 1px;
 .contemplacao {
 margin-bottom: 20px;
 }
+
+
