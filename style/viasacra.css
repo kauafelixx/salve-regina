@@ -37,7 +37,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;
-   font-style: oblique;
+  font-style: oblique;
 }
 
 .headerSegundo {
@@ -55,10 +55,11 @@ body {
       rgba(0, 0, 0, 0.248),
       rgb(0, 0, 0)
     ),
-    url(../img/viaSacra/fundoInicio.jpg);
+    url(../img/viaSacra/fundoheaderdois.jpg);
   height: 100vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-size: cover;
+  background-position: center;
   margin-bottom: 20px;
 
   h1 {
@@ -67,9 +68,11 @@ body {
     text-align: justify;
     margin-top: 20px;
     width: 80%;
+    max-width: 500px;
   }
 
   p {
+    max-width: 500px;
     color: rgb(222, 222, 222);
     width: 80%;
     line-height: 22px;
@@ -79,42 +82,92 @@ body {
   }
 }
 
-.oracaoInicial{
-line-height: 22px;
-font-size: 1.05em;
-text-align: justify;
-width: 80%;
-margin-bottom: 20px;
-strong{
-  color: var(--vinho-liturgico);
-  font-size: 1.1em;
-  font-weight: bold;
-}
+.oracaoInicialnormal {
+  line-height: 22px;
+  font-size: 1.05em;
+  text-align: justify;
+  width: 80%;
+  max-width: 700px;
+  margin-bottom: 20px;
+  strong {
+    color: var(--vinho-liturgico);
+    font-size: 1.1em;
+    font-weight: bold;
+  }
 }
 
 .viaSacra {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-  line-height: 22px;
+  align-items: center;
+
+  line-height: 30px;
   font-size: 1.05em;
   text-align: justify;
   width: 100%;
   margin-bottom: 20px;
-  strong{
+  strong {
     color: var(--vinho-liturgico);
     font-size: 1.1em;
     font-weight: bold;
   }
+  p {
+    width: 80%;
+    max-width: 700px;
+  }
 
-  img{
-    width: 100%;
-    max-width: 600px;
+  ul {
+    width: 80%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--vinho-liturgico);
+margin-top: 20px;
+margin-bottom: 20px;
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+      position: relative;
+      padding-left: 10px;
+      color: var(--preto-suave);
+
   
-    
-    margin:20px auto;
-   
+
+    }
+  }
+
+  h2 {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+
+    font-size: 1.1em;
+    padding: 10px;
+  }
+
+  img {
+    width: 120%;
+    max-width: 700px;
+    margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
+}
+
+
+.oracaoInicial{
+  color: var(--vinho-liturgico);
+  line-height: 22px;
+  font-size: 1em;
+  text-align: justify;
+  width: 80%;
+  max-width: 700px;
+  margin-bottom: 20px;
+border-left: var(--vinho-liturgico) solid 1px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.contemplacao {
+margin-bottom: 20px;
 }

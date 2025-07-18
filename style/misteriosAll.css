@@ -25,7 +25,7 @@
 
 body {
   text-align: justify;
-  font-family: var(--font-family-parastoo);
+  
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.567),
       rgba(255, 255, 255, 0.807)
@@ -38,8 +38,10 @@ body {
   margin: 0;
   font-weight: normal;
   font-style: oblique;
-  font-size: 1.04em;
-
+  font-size: 16px;
+display: flex;
+  flex-direction: column;
+  align-items: center;
   line-height: 25px;
 
   @media screen and (min-width: 768px) {
@@ -68,20 +70,44 @@ h3 {
   border-left: 10px solid var(--vinho-liturgico);
   border-radius: 15px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.404);
+
 }
 
-mark {
-  background-color: var(--vinho-liturgico-fraco);
-  border-radius: 5px;
+@media screen and (min-width: 992px) {
+  .pai {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+  .misterio {
+    width: 80%;
+  }
+  
+}
+strong {
+  color: var(--vinho-liturgico);
+
+ font-weight: normal;
   padding-left: 5px;
   padding-right: 5px;
 }
 
 .oracao {
-  margin: 10px 0;
+ margin-bottom: 20px;
   padding: 10px;
   max-width: 700px;
+
 }
+
+hr {
+  box-shadow: 1px 10px 10px var(--vinho-liturgico-fraco);
+  border: none;
+  height: 1px;
+  background-color: var(--vinho-liturgico-fraco);
+  margin: 20px 0;
+}
+
 
 .misterio > .oracao {
   border-left: 1px solid var(--vinho-liturgico);
@@ -89,6 +115,9 @@ mark {
 ul {
   margin-left: 20px;
   font-weight: 500;
+  h2{
+    margin-bottom: 10px;
+  }
   li {
     padding-left: 10px;
     margin-bottom: 10px;
