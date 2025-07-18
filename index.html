@@ -9,7 +9,46 @@
     <link rel="stylesheet" href="style/all.css" />
     <link rel="stylesheet" href="style/header.css">
   </head>
+<style>
+  .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f2e8;
+  width: 100vw;
+  display: flex;
+  height: auto;
+  align-items: flex-end;
+  gap: 10px;
+}
+.logo-container h1 {
+  font-family: var(--font-h1);
+  font-weight: 900;
+font-style: normal;
+  color: var(--vinho-liturgico);
+  text-shadow: 1px 1px 3px rgb(62, 24, 27);
+  font-size: 4em;
+  line-height: 0.9;
+}
 
+.regina {
+  padding-bottom: 30px;
+}
+.text {
+  padding-left: 10px;
+}
+
+.logo-image {
+  padding-top: 10px;
+  height: 180px;
+  margin-left: -70px;
+  padding-bottom: 75px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%),
+    saturate(150%);
+  transform: scale(1.2);
+}
+</style>
   <body>
     <div id="particles-js"></div>
 
@@ -27,7 +66,7 @@
     <!-- Área principal com os botões de navegação -->
     <main class="main">
       <section class="grid">
-        <div class="card">
+        <div class="card" id="botaoViaSacra">
           <img src="img/icons/cruz.png" alt />
           <p>via sacra</p>
         </div>

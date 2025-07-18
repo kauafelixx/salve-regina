@@ -9,6 +9,46 @@
     <link rel="stylesheet" href="../style/misterios.css" />
     <link rel="stylesheet" href="../style/header.css">
   </head>
+  <style>
+    .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  background-color: #f7f2e8;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+.logo-container h1 {
+  font-family: var(--font-h1);
+  font-weight: 900;
+font-style: normal;
+  color: var(--vinho-liturgico);
+  text-shadow: 1px 1px 3px rgb(62, 24, 27);
+  font-size: 4em;
+  line-height: 0.9;
+}
+
+.regina {
+  padding-bottom: 30px;
+}
+.text {
+  padding-left: 10px;
+}
+
+.logo-image {
+  padding-top: 10px;
+  height: 180px;
+  margin-left: -70px;
+  padding-bottom: 75px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%),
+    saturate(150%);
+  transform: scale(1.2);
+}
+  </style>
   <body>
     <div id="particles-js"></div>
      <header class="logo-container">
@@ -22,28 +62,28 @@
   </header>
 
     <section class="grid">
-      <a href="misterios/glorioso.html" class="card">
+      <a href="misterios/glorioso.html" class="card" id="botaoGlorioso">
         <img src="../img/misterios/glorioso.png" alt="mistérios gloriosos" />
         <p>Mistérios Gloriosos</p>
       </a>
 
-      <a href="misterios/gozoso.html" class="card">
+      <a href="misterios/gozoso.html" class="card" id="botaoGozoso">
         <img src="../img/misterios/gosozo.png" alt="mistérios gozosos" />
         <p>Mistérios Gozosos</p>
       </a>
 
-      <a href="misterios/doloroso.html" class="card">
+      <a href="misterios/doloroso.html" class="card" id="botaoDoloroso">
         <img src="../img/misterios/doloroso.png" alt="mistérios dolorosos" />
         <p>Mistérios Dolorosos</p>
       </a>
 
-      <a href="misterios/luminoso.html" class="card">
+      <a href="misterios/luminoso.html" class="card" id="botaoLuminoso">
         <img src="../img/misterios/luminuso.png" alt="mistérios luminosos" />
         <p>Mistérios Luminosos</p>
       </a>
     </section>
 
-    <script src="/misterios.js"></script>
+    <script src="../main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Configuração das partículas -->

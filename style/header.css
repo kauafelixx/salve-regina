@@ -24,23 +24,26 @@ body {
   align-items: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background-color: #f7f2e8;
+  height: 100px;
+  
   width: 100vw;
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap:10px;
 }
 .logo-container h1 {
   font-family: var(--font-h1);
   font-weight: 900;
-
+font-style: normal;
   color: var(--vinho-liturgico);
   text-shadow: 1px 1px 3px rgb(62, 24, 27);
-  font-size: 4em;
+  font-size: 2em;
   line-height: 0.9;
+  ;
 }
 
 .regina {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .text {
   padding-left: 10px;
@@ -48,9 +51,9 @@ body {
 
 .logo-image {
   padding-top: 10px;
-  height: 180px;
-  margin-left: -70px;
-  padding-bottom: 75px;
+  height: 100px;
+  margin-left: -40px;
+  padding-bottom: 45px;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%),
     saturate(150%);
   transform: scale(1.2);
