@@ -2,24 +2,28 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salve Regina</title>
-
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="style/all.css" />
-    <link rel="stylesheet" href="style/header.css">
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>orações</title>
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="../../style/all.css" />
+   
+    <link rel="stylesheet" href="../../style/oracoes.css">
   </head>
-<style>
-  .logo-container {
+ <style>
+     html, body {
+    overflow-x: hidden;
+     }
+    .logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   background-color: #f7f2e8;
   width: 100vw;
-  display: flex;
   height: auto;
+  display: flex;
   align-items: flex-end;
+
   gap: 10px;
 }
 .logo-container h1 {
@@ -48,7 +52,7 @@ font-style: normal;
     saturate(150%);
   transform: scale(1.2);
 }
-</style>
+  </style>
   <body>
     <div id="particles-js"></div>
 
@@ -59,65 +63,57 @@ font-style: normal;
         <h1 class="salve text">Salve</h1>
         <h1 class="regina text">Regina</h1>
       </div>
-      <img src="img/header/nossa-senhora.png" alt="Nossa Senhora" class="logo-image">
-   
+      <img src="../../img/header/nossa-senhora.png" alt="Nossa Senhora" class="logo-image">
+
   </header>
 
     <!-- Área principal com os botões de navegação -->
     <main class="main">
       <section class="grid">
-        
-        <div class="card" id="botaoViaSacra">
-          <img src="img/icons/cruz.png" alt />
-          <p>via sacra</p>
+
+        <div class="card" id="oracoesFundamentais" >
+          <div class="emoji">🙏🏻</div>
+          <p>Orações Fundamentais</p>
         </div>
 
-        <div class="card" id="botaoOracoes">
-          <img src="img/icons/cristandade.png" alt />
-          <p>orações</p>
-        </div>
-
-        <div class="card" id="botaoTerco">
-          <img src="img/icons/rosario.png" alt />
-          <p>Terço Diario</p>
+        <div class="card" id="oracoesMarianas" >
+          <div class="emoji" id="oracoesMarianas">🌹</div>
+          <p>Orações Marianas</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/igreja.png" alt />
-          <p>liturgia da missa</p>
+         <div class="emoji" id="oracoesJesus">❤</div>
+          <p>Orações a Jesus</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/abra-o-livro.png" alt />
-          <p>liturgia diária</p>
+          <div class="emoji" id="oracoesEspiritoSanto">🔥</div>
+          <p>Orações ao Espírito Santo</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/relogio.png" alt />
-          <p>liturgia das horas</p>
+          <div class="emoji" id="oracoesSantosArcanjos">🛡</div>
+          <p>Orações a Santos e Arcanjos</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/folhas-de-uma-planta.png" alt />
-          <p>dogmas</p>
+          <div class="emoji" id="oracoesLiturgicas">🕊</div>
+          <p>Orações Litúrgicas e Devocionais</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/cruz.png" alt />
-          <p>catequese</p>
+          <div class="emoji" id="oracoesEspeciais">💧</div>
+          <p>Orações Especiais</p>
         </div>
 
-        <div class="card">
-          <img src="img/icons/universidade.png" alt />
-          <p>Livros</p>
-        </div>
       </section>
     </main>
 
+    <script src="../../js/oracoes.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <!-- Configuração das partículas -->
-    <script src="particles-config.js"></script>
-    <script src="main.js"></script>
-    <script src="mudarIdioma.js"></script>
+    <script src="../../particles-config.js"></script>
+    <script src="../../main.js"></script>
+    <script src="../../js/mudarIdioma.js"></script>
   </body>
 </html>
