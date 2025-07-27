@@ -8,107 +8,66 @@
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="style/all.css" />
     <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/font.css">  
   </head>
-<style>
-  .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-  background-color: #f7f2e8;
-  width: 100vw;
-  display: flex;
-  height: auto;
-  align-items: flex-end;
-  gap: 10px;
-}
-.logo-container h1 {
-  font-family: var(--font-h1);
-  font-weight: 900;
-font-style: normal;
-  color: var(--vinho-liturgico);
-  text-shadow: 1px 1px 3px rgb(62, 24, 27);
-  font-size: 4em;
-  line-height: 0.9;
-}
 
-.regina {
-  padding-bottom: 30px;
-}
-.text {
-  padding-left: 10px;
-}
-
-.logo-image {
-  padding-top: 10px;
-  height: 180px;
-  margin-left: -70px;
-  padding-bottom: 75px;
-  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.366)), contrast(150%),
-    saturate(150%);
-  transform: scale(1.2);
-}
-</style>
   <body>
     <div id="particles-js"></div>
 
     <!-- Cabeçalho fixo com logo e título -->
-  <header class="logo-container">
- 
-      <div class="logo-text">
-        <h1 class="salve text">Salve</h1>
-        <h1 class="regina text">Regina</h1>
-      </div>
-      <img src="img/header/nossa-senhora.png" alt="Nossa Senhora" class="logo-image">
-   
-  </header>
+     <header class="header">
+        <div class="header-content">
+            <img src="img/header/eucaristia.png" alt="Ostensório" class="monstrance-image">
+            <h1 class="title">Salve Regina</h1>
+        </div>
+    </header>
 
     <!-- Área principal com os botões de navegação -->
     <main class="main">
       <section class="grid">
         
         <div class="card" id="botaoViaSacra">
-          <img src="img/icons/cruz.png" alt />
+          <img src="img/icons/cruz.svg" class="icone" role="img" />
           <p>via sacra</p>
         </div>
 
         <div class="card" id="botaoOracoes">
-          <img src="img/icons/cristandade.png" alt />
+          <img src="img/icons/cristandade.svg" alt role="img" />
           <p>orações</p>
         </div>
 
         <div class="card" id="botaoTerco">
-          <img src="img/icons/rosario.png" alt />
+          <img src="img/icons/rosario.svg" alt role="img" />
           <p>Terço Diario</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/igreja.png" alt />
+          <img src="img/icons/igreja.svg" alt role="img" />
           <p>liturgia da missa</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/abra-o-livro.png" alt />
+          <img src="img/icons/abra-o-livro.svg" alt role="img" />
           <p>liturgia diária</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/relogio.png" alt />
+          <img src="img/icons/relogio.svg" alt role="img" />
           <p>liturgia das horas</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/folhas-de-uma-planta.png" alt />
+          <img src="img/icons/folhas-de-uma-planta.svg" alt />
           <p>dogmas</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/cruz.png" alt />
+          <img src="img/icons/cruz.svg" role="img" alt />
           <p>catequese</p>
         </div>
 
         <div class="card">
-          <img src="img/icons/universidade.png" alt />
+          <img src="img/icons/universidade.svg" role="img" alt />
           <p>Livros</p>
         </div>
       </section>
