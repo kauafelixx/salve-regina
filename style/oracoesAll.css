@@ -7,7 +7,7 @@
   --preto-suave: #222222;
   --dourado-suave-mais: #b89c40a9;
   --dourado-suave-escuro: #8e7422d5;
---vinho-liturgico-fraco: #6a1b1b4d;
+  --vinho-liturgico-fraco: #6a1b1b4d;
   --font-h1: "Petit Formal Script", cursive;
 }
 
@@ -31,21 +31,19 @@ body {
 
 .container {
   width: 100vw;
-
+  padding: 10px;
   margin: 0 auto;
   background: transparent;
 
-  
   h2 {
     font-size: 1.25em;
     text-align: center;
-    color:var(--vinho-liturgico);
+    color: var(--vinho-liturgico);
     margin-top: 10px;
     margin-bottom: 60px;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--vinho-liturgico-fraco);
   }
-  
 }
 
 .oracao {
@@ -62,7 +60,7 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  
+
   position: relative;
 }
 
@@ -70,27 +68,19 @@ body {
 .latim {
   flex: 1;
   padding: 10px;
-
 }
-.portugues{
+.portugues {
   padding: 0 10px;
   border-right: 1px solid var(--vinho-liturgico-fraco);
   padding-right: 15px;
   padding-left: 10px;
 }
 
-.latim{
+.latim {
   margin-left: 20px;
-  
 }
-
-
-
-
-
 
 p {
   margin-bottom: 0.8em;
- font-size: .8em;
- scale: 1.1;
+  font-size: 0.9em;
 }

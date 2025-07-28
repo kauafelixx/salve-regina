@@ -38,13 +38,12 @@ body {
 
 
 .card {
-background-image: linear-gradient(
-    rgba(255, 255, 255, 0.378),
-    rgba(255, 255, 255, 0.349)
-  ), url(../img/imageSemTag/fundoBotao.jpg);
-  padding: 1rem;
+background-color: #ffffffec;
+padding: 16px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.666);
+-webkit-box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.613);
+-moz-box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.585);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,7 +53,7 @@ background-image: linear-gradient(
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-margin-top: 20px;
+margin-top: 30px;
 }
 
 
@@ -66,14 +65,15 @@ margin-top: 20px;
 
   transform: translateY(-5px) scale(1.1);
 
-    box-shadow:     0 5px 10px rgba(0, 0, 0, 0.2),
-    0 10px 20px rgba(0, 0, 0, 0.15),
-    0 15px 30px rgba(0, 0, 0, 0.1);;
+   box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.545);
+-webkit-box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.587);
+-moz-box-shadow: 9px 11px 33px 5px rgba(0, 0, 0, 0.598);
 }
 
 .card p {
+
   text-align: center;
   font-weight: bold;
-  color: var(--preto-suave);
+  color: rgb(21, 21, 21);
   text-transform: capitalize;
 }
