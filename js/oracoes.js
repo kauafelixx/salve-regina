@@ -5,3 +5,6 @@ document.getElementById("oracoesFundamentais").addEventListener('click', () => {
 document.getElementById("oracoesMarianas").addEventListener('click', () => {
     window.location.href = 'oracoesmarianas.html';
 });
+
+
+

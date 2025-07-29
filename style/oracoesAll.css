@@ -39,6 +39,7 @@ body {
     font-size: 1.25em;
     text-align: center;
     color: var(--vinho-liturgico);
+     text-shadow: 4px 2px 6px rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 60px;
     padding-bottom: 10px;
@@ -71,7 +72,7 @@ body {
 }
 .portugues {
   padding: 0 10px;
-  border-right: 1px solid var(--vinho-liturgico-fraco);
+  border-right: 1px dotted var(--vinho-liturgico-fraco);
   padding-right: 15px;
   padding-left: 10px;
 }
@@ -84,3 +85,6 @@ p {
   margin-bottom: 0.8em;
   font-size: 0.9em;
 }
+
+
+ 

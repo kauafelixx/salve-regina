@@ -1,114 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salve Regina - Header</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif; /* Uma fonte padrão para o resto do corpo */
-            background-color: #f5f0e1; /* Cor de fundo bege claro, similar à da imagem */
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Reveal Teste</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      height: 2000px; /* altura pra rolar */
+      background: #000000;
+    }
 
-        .main-header {
-            width: 100%;
-            display: flex;
-            justify-content: center; /* Centraliza o conteúdo horizontalmente */
-            align-items: center; /* Centraliza o conteúdo verticalmente */
-            padding: 20px 0; /* Espaçamento interno superior e inferior */
-        }
+    .box {
+      width: 80%;
+      margin: 200px auto;
+      padding: 50px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      font-size: 24px;
+      text-align: center;
+    }
 
-        .header-content {
-            display: flex;
-            align-items: center; /* Alinha os itens verticalmente ao centro */
-            gap: 30px; /* Espaço entre o texto e a imagem */
-            max-width: 960px; /* Limita a largura do conteúdo do header */
-            width: 90%; /* Ocupa 90% da largura disponível */
-        }
-
-        .text-container {
-            display: flex;
-            flex-direction: column; /* Coloca "Salve" e "Regina" um abaixo do outro */
-            line-height: 0.9; /* Ajusta o espaçamento entre as linhas para que se sobreponham um pouco */
-            color: #8B0000; /* Cor de vinho/vermelho escuro, similar à da imagem */
-            font-family: 'Crimson Text', serif; /* Fonte similar à da imagem */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para o texto */
-            font-weight: 700; /* Negrito */
-        }
-
-        .salve {
-            font-size: 5em; /* Tamanho da fonte para "Salve" */
-            z-index: 2; /* Garante que "Salve" fique sobre "Regina" se houver sobreposição */
-            position: relative; /* Permite o uso de z-index */
-        }
-
-        .regina {
-            font-size: 5em; /* Tamanho da fonte para "Regina" */
-            margin-top: -20px; /* Ajusta a margem para sobrepor um pouco "Salve" */
-            z-index: 1; /* Coloca "Regina" abaixo de "Salve" se houver sobreposição */
-            position: relative; /* Permite o uso de z-index */
-        }
-
-        .image-container img {
-            max-width: 200px; /* Tamanho máximo da imagem */
-            height: auto; /* Mantém a proporção da imagem */
-            display: block; /* Remove o espaço extra abaixo da imagem */
-        }
-
-        /* Media Queries para responsividade */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column; /* Empilha texto e imagem em telas menores */
-                gap: 15px;
-            }
-
-            .salve,
-            .regina {
-                font-size: 3.5em; /* Reduz o tamanho da fonte em telas menores */
-            }
-
-            .regina {
-                margin-top: -15px; /* Ajusta a sobreposição */
-            }
-
-            .image-container img {
-                max-width: 150px; /* Reduz o tamanho da imagem em telas menores */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .salve,
-            .regina {
-                font-size: 2.5em; /* Reduz ainda mais o tamanho da fonte */
-            }
-            .regina {
-                margin-top: -10px; /* Ajusta a sobreposição */
-            }
-        }
-    </style>
+    .reveal {
+      opacity: 0;
+    }
+  </style>
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="header-content">
-            <div class="text-container">
-                <span class="salve">Salve</span>
-                <span class="regina">Regina</span>
-            </div>
-            <div class="image-container">
-                <img src="img/header/ilustracao-de-fiesta-de-la-virgen-desenhada-a-mao.png" alt="Imagem de Nossa Senhora">
-            </div>
-        </div>
-    </header>
+  <div class="box reveal">Olá! Eu apareço com animação 😄</div>
 
-    <p style="text-align: center; margin-top: 50px;">
-        Este é um exemplo de header. Certifique-se de que a imagem "nossa_senhora.png" esteja na mesma pasta para ser exibida.
-    </p>
+  <!-- ScrollReveal LIB -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <!-- ATIVAR animação -->
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      distance: '50px',
+      origin: 'bottom',
+      duration: 1000,
+      easing: 'ease',
+      opacity: 0,
+      reset: false // true se quiser repetir quando voltar a rolar
+    });
+  </script>
 
 </body>
 </html>
