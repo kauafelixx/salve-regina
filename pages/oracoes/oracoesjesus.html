@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../style/oracoes.css" />
     <link rel="stylesheet" href="../../style/font.css" />
     <title>Orações a Jesus</title>
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .headerSegundoOracoes {
         background-image: linear-gradient(
@@ -39,10 +39,69 @@
         estavas dentro de mim, e eu lá fora, e fora te procurava." — Santo
         Agostinho, Confissões
       </div>
+
+      <div class="flex flex-col items-center">
+        <!-- Primeira linha de botões -->
+        <div class="flex justify-center items-center gap-2">
+          <a href="#almaDeCristo" class="flex items-center w-80 justify-center"
+            >Alma de Cristo</a
+          >
+          <a
+            href="#sagradoCoracaoDeJesus"
+            class="flex items-center w-80 justify-center"
+            >Sagrado Coração de Jesus
+          </a>
+        </div>
+        <!-- Segunda linha de botões, desalinhada com a primeira -->
+        <div class="flex justify-center items-center gap-1.5 mt-1 -ml-10">
+          <a
+            href="#oracaoJesusCrucificado"
+            class="flex items-center w-80 justify-center"
+            >A Jesus Crucificado
+          </a>
+          <a href="#bomLadrao" class="flex items-center w-80 justify-center"
+            >Oração do Bom Ladrão</a
+          >
+
+          <a
+            href="#sublimeSacramento"
+            class="flex items-center w-80 justify-center"
+            >Tão Sublime Sacramento</a
+          >
+        </div>
+        <!-- Terceira linha de botões, desalinhada com a segunda -->
+        <div class="flex justify-center items-center gap-5 mt-1 ml-10">
+          <a
+            href="#jesusMisericordioso"
+            class="flex items-center w-40 justify-center"
+            >Súplica a Jesus Misericordioso</a
+          >
+          <a href="#santaMatilde" class="flex items-center w-40 justify-center"
+            >Oração de Santa Matilde</a
+          >
+        </div>
+        <!-- Quarta linha de botões, desalinhada com a terceira -->
+        <div class="flex justify-center items-center gap-10 mt-1 -ml-25">
+          <a
+            href="#santaGertrudes"
+            class="flex items-center w-40 justify-center"
+            >Oração de Santa Gertrudes</a
+          >
+          <a href="#cristoRei" class="flex items-center w-40 justify-center"
+            >Oração a Cristo Rei</a
+          >
+        </div>
+        <!-- Quinta linha de botões, desalinhada com a terceira -->
+        <div class="flex justify-center items-center gap-10 mt-1 -ml-25">
+          <a href="#ladainhaJesus" class="flex items-center w-60 justify-center"
+            >Ladainha do Santíssimo Nome de Jesus</a
+          >
+        </div>
+      </div>
     </div>
 
     <div class="container">
-      <div class="oracao">
+      <div class="oracao" id="almaDeCristo">
         <h2>Alma de Cristo – Anima Christi</h2>
 
         <div class="content">
@@ -86,7 +145,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="sagradoCoracaoDeJesus">
         <h2>Sagrado Coração de Jesus – Cor Iesu Sacratissimum</h2>
 
         <div class="content">
@@ -103,7 +162,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="oracaoJesusCrucificado">
         <h2>Oração a Jesus Crucificado – Oratio ad Iesum Crucifixum</h2>
 
         <div class="content">
@@ -141,7 +200,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="bomLadrao">
         <h2>Oração do Bom Ladrão – Oratio Boni Latronis</h2>
 
         <div class="content">
@@ -189,7 +248,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="sublimeSacramento">
         <h2>Tão Sublime Sacramento - Tantum Ergo Sacramentum</h2>
 
         <div class="content">
@@ -261,7 +320,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="jesusMisericordioso">
         <h2>
           Súplica a Jesus Misericordioso – Supplicatio ad Iesum Misericordem
         </h2>
@@ -393,7 +452,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="santaMatilde">
         <h2>Oração de Santa Matilde – Oratio Sanctae Mechtildis</h2>
 
         <div class="content">
@@ -435,7 +494,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="santaGertrudes">
         <h2>Oração de Santa Gertrudes – Oratio Sanctae Gertrudis</h2>
 
         <div class="content">
@@ -469,7 +528,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="cristoRei">
         <h2>Oração a Cristo Rei – Oratio ad Christum Regem</h2>
 
         <div class="content">
@@ -536,7 +595,7 @@
         </div>
       </div>
 
-      <div class="oracao">
+      <div class="oracao" id="ladainhaJesus">
         <h2>
           Ladainha do Santíssimo Nome de Jesus – Litania Sanctissimi Nominis
           Iesu

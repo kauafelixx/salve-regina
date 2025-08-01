@@ -145,12 +145,13 @@ div > a{
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
   color:black;
+  text-align: center;
 padding: 2px;
   background-color: var(--dourado-suave);
   font-size: .5em;
-box-shadow: 5px 0px 62px -10px rgba(0,0,0,0.62);
--webkit-box-shadow: 5px 0px 62px -10px rgba(0,0,0,0.62);
--moz-box-shadow: 5px 0px 62px -10px rgba(0,0,0,0.62);
+box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
+-webkit-box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
+-moz-box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
 
 &:hover, &:active{
   transform: scale(1.1);
