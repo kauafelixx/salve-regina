@@ -10,14 +10,13 @@
   --dourado-suave-mais: #b89c40a9;
   --dourado-suave-escuro: #8e7422d5;
 
-  --font-h1:"Petit Formal Script", cursive;
+  --font-h1: "Petit Formal Script", cursive;
 }
 
 body {
-  
- background: linear-gradient(rgba(23, 23, 23, 0.816), rgba(0, 0, 0, 0.729)),
+  background: linear-gradient(rgba(23, 23, 23, 0.816), rgba(0, 0, 0, 0.729)),
     url("img/imgFundo/imgFundo.jpg");
-    
+
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -35,8 +34,6 @@ body {
   width: 40px;
   height: 40px;
   margin-bottom: 0.5rem;
-
-
 }
 .grid {
   display: grid;
@@ -45,7 +42,6 @@ body {
 
   padding: 10px;
 }
-
 
 @keyframes pulso {
   0% {

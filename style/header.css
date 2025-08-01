@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -23,7 +23,6 @@
 html,
 body {
   overflow-x: hidden;
- 
 }
 .header {
   width: 100%;
@@ -56,11 +55,11 @@ body {
   font-family: "Charm", cursive;
   font-size: 3.5rem;
   padding-top: 30px;
-  
+
   color: var(--branco-puro);
   letter-spacing: 2px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
- 
+
   text-decoration: underline 1.5px var(--dourado-suave);
   text-underline-offset: 5px;
 }

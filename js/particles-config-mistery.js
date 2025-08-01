@@ -7,33 +7,33 @@ particlesJS("particles-js", {
     },
     opacity: {
       value: 1,
-      random: true
+      random: true,
     },
     size: {
       value: 5,
-      random: true
+      random: true,
     },
     line_linked: {
-      enable: false // sem linhas, mais limpo
+      enable: false, // sem linhas, mais limpo
     },
     move: {
       enable: true,
       speed: 1.2, // bem lento, meditativo
       direction: "none",
-      out_mode: "out"
-    }
+      out_mode: "out",
+    },
   },
   interactivity: {
     detect_on: "canvas",
     events: {
       onhover: {
         enable: true,
-        mode: "repulse"
+        mode: "repulse",
       },
       onclick: {
-        enable: false
-      }
-    }
+        enable: false,
+      },
+    },
   },
-  retina_detect: true
+  retina_detect: true,
 });

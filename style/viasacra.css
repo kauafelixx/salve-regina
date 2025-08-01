@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
 
-
   &:focus {
     outline: none;
   }
@@ -25,8 +24,9 @@
 
   --font-family-parastoo: "Parastoo", serif;
 }
-html, body{
-    overflow-x: hidden;
+html,
+body {
+  overflow-x: hidden;
 }
 body {
   display: flex;
@@ -41,38 +41,37 @@ body {
   background-attachment: fixed;
   background-size: cover;
 
-
   font-style: oblique;
 }
 
 .headerSegundo {
-z-index: -2;
+  z-index: -2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  
+
   color: white;
   font-style: oblique;
   background-repeat: no-repeat;
   background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.248),
-    rgb(0, 0, 0)
+      to bottom,
+      rgba(0, 0, 0, 0.248),
+      rgb(0, 0, 0)
     ),
     url(../img/viaSacra/fundoheaderdois.jpg);
-    height: 100vh;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 20px;
-    
-    h1 {
-      line-height: 38px;
-      font-size: 2.3em;
-      text-align: justify;
-     
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+
+  h1 {
+    line-height: 38px;
+    font-size: 2.3em;
+    text-align: justify;
+
     margin-top: 20px;
     width: 80%;
     max-width: 500px;
@@ -89,7 +88,8 @@ z-index: -2;
   }
 }
 
-.oracaoInicialnormal, .oracaoFinal {
+.oracaoInicialnormal,
+.oracaoFinal {
   line-height: 22px;
   font-size: 1.05em;
   text-align: justify;
@@ -130,17 +130,14 @@ z-index: -2;
     display: flex;
     flex-direction: column;
     border-left: 1px solid var(--vinho-liturgico);
-margin-top: 20px;
-margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     li {
       margin-bottom: 10px;
       list-style-type: none;
       position: relative;
       padding-left: 10px;
       color: var(--preto-suave);
-
-  
-
     }
   }
 
@@ -161,8 +158,7 @@ margin-bottom: 20px;
   }
 }
 
-
-.oracaoInicial{
+.oracaoInicial {
   color: var(--vinho-liturgico);
   line-height: 22px;
   font-size: 1em;
@@ -170,13 +166,11 @@ margin-bottom: 20px;
   width: 80%;
   max-width: 700px;
   margin-bottom: 20px;
-border-left: var(--vinho-liturgico) solid 1px;
+  border-left: var(--vinho-liturgico) solid 1px;
   padding-left: 10px;
   margin-top: 20px;
 }
 
 .contemplacao {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
-
-
