@@ -24,7 +24,7 @@ body {
       rgba(255, 255, 255, 0.567),
       rgba(255, 255, 255, 0.807)
     ),
-    url(../img/imageSemTag/fundoMisterios.jpg);
+    url(../img/imageSemTag/fundoMisterios.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -40,7 +40,7 @@ body {
     font-size: 1.25em;
     text-align: center;
     color: var(--vinho-liturgico);
-     text-shadow: 4px 2px 6px rgb(255, 255, 255);
+    text-shadow: 4px 2px 6px rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 60px;
     padding-bottom: 10px;
@@ -48,7 +48,7 @@ body {
   }
 }
 
-mark{
+mark {
   background-color: transparent;
   font-weight: bolder;
 }
@@ -92,14 +92,11 @@ p {
   font-size: 0.9em;
 }
 
-p::first-letter{
-  color:var(--vinho-liturgico);
+p::first-letter {
+  color: var(--vinho-liturgico);
   line-height: 5px;
   font-size: 2em;
-
 }
-
-
 
 .headerSegundoOracoes {
   z-index: -2;
@@ -121,7 +118,6 @@ p::first-letter{
   h1 {
     line-height: 38px;
     font-size: 2.3em;
- 
 
     margin-top: 20px;
     width: 80%;
@@ -137,25 +133,79 @@ p::first-letter{
     margin-top: 20px;
     font-size: 1.2em;
   }
-
 }
 
-
-div > a{
+div > a {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 8px;
-  color:black;
+  color: black;
   text-align: center;
-padding: 2px;
+  padding: 2px;
   background-color: var(--dourado-suave);
-  font-size: .5em;
-box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
--webkit-box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
--moz-box-shadow: 5px 0px 62px 10px rgba(0,0,0,0.62);
+  font-size: 0.5em;
+  box-shadow: 5px 0px 62px 10px rgba(0, 0, 0, 0.62);
+  -webkit-box-shadow: 5px 0px 62px 10px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 5px 0px 62px 10px rgba(0, 0, 0, 0.62);
+  animation: pulso 3.5s ease infinite;
 
-&:hover, &:active{
-  transform: scale(1.1);
- transition: .1s ease;
+  &:hover,
+  &:active {
+    transform: scale(1.1);
+    transition: 1s ease;
+  }
 }
+@keyframes pulso {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.05);
+    background-color: var(--dourado-suave-mais);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.05);
+    background-color: var(--dourado-suave-mais);
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    background-color: var(--dourado-suave-mais);
+    transform: scale(1.05);
+  }
 }
- 
+
+.link:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.link:nth-of-type(2) {
+  animation-delay: 0.8s;
+}
+.link:nth-of-type(3) {
+  animation-delay: 0.40s;
+}
+.link:nth-of-type(4) {
+  animation-delay: 0.4s;
+}
+.link:nth-of-type(5) {
+  animation-delay: 0.21s;
+}
+
+.link:nth-of-type(6) {
+  animation-delay: 1.9s;
+}
+.link:nth-of-type(7) {
+  animation-delay: 2.7s;
+}
+.link:nth-of-type(8) {
+  animation-delay: 3.4s;
+}
+.link:nth-of-type(9) {
+  animation-delay: 1.5s;
+}
+.link:nth-of-type(10) {
+  animation-delay: 4.8s;
+}
