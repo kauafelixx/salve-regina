@@ -6,7 +6,7 @@ particlesJS("particles-js", {
       type: "star", // pode trocar para "star" se quiser
     },
     opacity: {
-      value: 1,
+      value: 0.5,
       random: true,
     },
     size: {

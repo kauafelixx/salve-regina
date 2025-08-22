@@ -23,6 +23,7 @@
 html,
 body {
   overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 .header {
   width: 100%;
@@ -100,5 +101,50 @@ body {
   50% {
     filter: drop-shadow(0 0 20px #ffd90060) drop-shadow(0 0 30px #ffcc002c)
       drop-shadow(0 0 40px #ffba523c);
+  }
+}
+
+
+.headerSegundo {
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  color: white;
+  font-style: oblique;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.248),
+      rgb(0, 0, 0)
+    ),
+    url(../img/viaSacra/fundoheaderdois.jpg);
+  height: 100vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+
+  h1 {
+    line-height: 38px;
+    font-size: 2.3em;
+    text-align: justify;
+
+    margin-top: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  p {
+    max-width: 500px;
+    color: rgb(222, 222, 222);
+    width: 80%;
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.2em;
   }
 }
