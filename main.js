@@ -9,3 +9,7 @@ document.getElementById("botaoViaSacra").addEventListener("click", () => {
 document.getElementById("botaoOracoes").addEventListener("click", () => {
   window.location.href = "pages/oracoes/oracoes.html";
 });
+
+document.getElementById("botaoLivros").addEventListener("click", ()=> {
+  window.location.href = "pages/livros.html";
+})

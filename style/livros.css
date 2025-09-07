@@ -1,0 +1,26 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+:root {
+  --azul-mariano: #1f3a93;
+  --dourado-suave: #e8bf39d5;
+  --branco-puro: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --vinho-liturgico: #6a1b1b;
+  --preto-suave: #222222;
+  --dourado-suave-mais: #b89c40a9;
+  --dourado-suave-escuro: #8e7422d5;
+  --vinho-liturgico-fraco: #6a1b1b4d;
+  --font-h1: "Petit Formal Script", cursive;
+}
+
+
+body {
+
+  background-color: var(--azul-mariano);
+  margin: 0;
+
+}
